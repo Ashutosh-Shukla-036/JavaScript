@@ -1,0 +1,1 @@
+This Repositorie will have multiple simple JavaScripts such as Calculator , weather application , Temperature convertor and etc.
