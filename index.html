@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverydayTools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <nav>
+                    <h1 id="header">EverydayTools</h1>
+                    <label for="app-dropdown">Select an Application</label>
+                    <select name="Application" id="app-dropdown" onchange="showApplication()">
+                        <option value="">--Select--</option>
+                        <option value="temperature-converter">Temperature Converter</option>
+                        <option value="calculator">Calculator</option>
+                        <option value="weather">Weather</option>
+                    </select>
+                </nav>
+            </div>
+        </header>
+
+        <div id="temperature-converter" class="application" style="display: none;">
+            <form>
+                <h2>Temperature Converter</h2>
+                <input type="number" name="number" id="number" value="0"><br>
+                <input type="radio" name="temp" id="toFahrenheit">
+                <label for="toFahrenheit">Celsius &rarr; Fahrenheit</label><br>
+                <input type="radio" name="temp" id="toCelsius">
+                <label for="toCelsius">Fahrenheit &rarr; Celsius</label><br>
+                <button type="button" onclick="tempConverter()">Submit</button>
+                <p id="result"></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
